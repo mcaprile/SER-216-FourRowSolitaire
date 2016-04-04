@@ -17,8 +17,6 @@
     along with FourRowSolitaire.  If not, see <http://www.gnu.org/licenses/>.
  */
 
- // testing out change 4
-
 package FourRowSolitaire;
 
 import java.awt.Desktop;
