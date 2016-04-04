@@ -17,6 +17,8 @@
     along with FourRowSolitaire.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+ // testing out change
+
 package FourRowSolitaire;
 
 import java.awt.Desktop;
@@ -29,15 +31,15 @@ import javax.swing.*;
 
 /**
  * Class: FourRowSolitaire
- * 
+ *
  * Description: The FourRowSolitaire class adds a menu to the SolitaireBoard Frame.
- * 
+ *
  * @author Matt Stephen
  */
 public class FourRowSolitaire extends SolitaireBoard implements ActionListener
 {
     public static final String version = ".40";
-    
+
     private JMenuBar menuBar = new JMenuBar();
 
     private JMenu game = new JMenu("Game");
@@ -88,7 +90,7 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
 
         menuBar.add(game);
         menuBar.add(helpMenu);
-        
+
         setJMenuBar(menuBar);
 
         newGame.setMnemonic('N');
@@ -139,7 +141,7 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
         int newDrawCount = 1, timerStatus = 0, deckNumber = 3, backgroundNumber = 2;
         int saved = 0, winAnimation = 0, winSounds = 0, drawCount = 1, deckThroughs = 1;
         int difficulty = 2, newDifficulty = 2;
-        
+
         try
         {
             File file = new File(fileLocation + "frs-statistics.dat");
@@ -228,7 +230,7 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
         if(saved == 1)
         {
             LinkedList<Integer> cards = new LinkedList<Integer>();
-            
+
             try
             {
                 File file = new File(fileLocation + "frs-savedgame.dat");
@@ -532,7 +534,7 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
         {
             JOptionPane.showMessageDialog(this, "Four Row Solitaire was created and programmed by Matt Stephen.\n" +
                     "\nYou can modify this code in accordance with GPL v3.0.\n" +
-                    "\nTo check if there is a newer version, go to fourrow.sourceforge.net.", 
+                    "\nTo check if there is a newer version, go to fourrow.sourceforge.net.",
                     "About Game", JOptionPane.INFORMATION_MESSAGE);
         }
         else if(e.getSource() == checkUpdate)
